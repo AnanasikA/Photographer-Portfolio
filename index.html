@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap">
+
+    <title>Portfolio Fotografa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Thomas Williams</h1>
+        <p>Profesjonalny fotograf</p>
+    </header>
+
+    <main>
+        <!-- Gallery Section -->
+        <section id="gallery" aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">Galeria</h2>
+            <div class="filters">
+                <button onclick="filterGallery('all')">Wszystkie</button>
+                <button onclick="filterGallery('kategoria1')">Kategoria 1</button>
+                <button onclick="filterGallery('kategoria2')">Kategoria 2</button>
+                <button onclick="filterGallery('kategoria3')">Kategoria 3</button>
+                <button onclick="filterGallery('kategoria4')">Kategoria 4</button>
+                <button onclick="filterGallery('kategoria5')">Kategoria 5</button>
+                <button onclick="filterGallery('kategoria6')">Kategoria 6</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="kategoria1">
+                    <img src="images/img-1.jpg" alt="Opis zdjęcia 1">
+                </div>
+                <div class="gallery-item" data-category="kategoria2">
+                    <img src="images/img-2.jpg" alt="Opis zdjęcia 2">
+                </div>
+                <div class="gallery-item" data-category="kategoria3">
+                    <img src="images/img-3.jpg" alt="Opis zdjęcia 3">
+                </div>
+                <div class="gallery-item" data-category="kategoria4">
+                    <img src="images/img-4.jpg" alt="Opis zdjęcia 4">
+                </div>
+                <div class="gallery-item" data-category="kategoria5">
+                    <img src="images/img-5.jpg" alt="Opis zdjęcia 5">
+                </div>
+                <div class="gallery-item" data-category="kategoria6">
+                    <img src="images/img-6.jpg" alt="Opis zdjęcia 6">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Usługi</h2>
+            <a href="services.html" class="btn">Zobacz wszystkie usługi</a>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog">
+            <h2>Blog</h2>
+            <a href="blog.html" class="btn">Przeglądaj posty</a>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <h2>Kontakt</h2>
+        <a href="contact.html" class="btn">Skontaktuj się ze mną</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
